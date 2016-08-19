@@ -1,0 +1,298 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>products</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body{
+				font-family: "Î¢ÈíÑÅºÚ";
+			  	background:#E8E8E8;
+				width: 100%;
+			}
+			header{
+				width: auto;
+				height:172px;
+				background: #68B2D5;
+			}
+			.list{
+				width:43px;
+				height:100%;
+				background: url(images/list.png) no-repeat left 30px;
+ 				display: inline-block;
+ 				margin-left: 25px;
+ 				float: left;
+ 				background-size: 90%;
+ 			}
+			.title{
+				float: left;
+				height:170px;
+				line-height:90px;
+				margin-left:46px;  
+				color:#DFFFFF;
+				font-weight: normal;
+				font-size: 31px;
+				font-family: "Î¢ÈíÑÅºÚ";
+			}
+			.pic{
+				width: 40px;
+				height: 172px;
+				background: url(images/pic.png) no-repeat 0 30px;
+				display: inline-block;
+				float: right;
+				margin-right: 20px;
+				background-size: 90%;
+			}
+			.car{
+				width: 41px;
+				height: 172px;
+				background: url(images/car.png) no-repeat 0 30px;
+				display: inline-block;
+				float: right;
+				margin-right: 15px;
+				background-size: 90%;
+			}
+			p.text{
+				float:left;
+				margin-top: 118px;
+				margin-left: -338px;
+				color:#D4F3FF;
+				font-weight: normal;
+				font-family: "Î¢ÈíÑÅºÚ" ;
+				font-size: 26px;
+			}
+			.arrow_right{
+				width: 30px;
+				height: 116px;
+				display: inline-block;
+				background: url(images/arrow_right.png) no-repeat right 55px;
+				position: absolute;
+				right: 26px;
+				top:57px; 
+				background-size: 90%;
+			}
+			.search{
+				width: 100%;
+				height: 100px;
+				background: #F7F7F7 url(images/search.png) no-repeat 28px center;
+				margin: 0 auto;
+				box-shadow: 0px 2px 2px #b9b9b9;
+				background-size: 30px;
+			}
+			.search input{
+				border:0;
+				outline: none;
+				height:100%;
+				line-height: 65px;
+				margin-left: 120px;
+				background: none;
+				font-size: 30px;
+				color: #A5A5A5;
+			}
+			.product{
+				width: 90%;
+				height: auto;
+				overflow: hidden;
+				margin: 0 auto;
+				margin-top:0px;
+			}
+			.choose1{
+				height: auto;
+				width: 16%;
+				text-align: center;
+				line-height: 70px;
+				color: #FFFEFF;
+				background: #A6A5AB;
+				border: 0px solid;
+				border-radius:5px;
+				margin: 65px 0px 65px 0px;
+				margin-left: 17%;
+				display: inline-block;
+				font-size: 19px;
+				box-shadow:0 1px 2px #b9b9b9;
+				position: relative;
+
+			}
+			.choose2{
+				height: auto;
+				width: 16%;
+				text-align: center;
+				line-height: 70px;
+				color: #FFFEFF;
+				background: #A6A5AB;
+				border: 0px solid;
+				border-radius:5px;
+				margin: 65px 0px 65px 0px;
+				margin-left: 8%;
+				display: inline-block;
+				font-size: 19px;
+				box-shadow:0 1px 2px #b9b9b9;
+				position: relative;
+			}
+			.choose3{
+				height: auto;
+				width: 16%;
+				text-align: center;
+				line-height: 70px;
+				color: #FFFEFF;
+				background: #A6A5AB;
+				border: 0px solid;
+				border-radius:5px;
+				margin: 65px 0px 65px 0px;
+				margin-left: 8%;
+				display: inline-block;
+				font-size: 19px;
+				box-shadow:0 1px 2px #b9b9b9;
+				position: relative;
+			}
+			.default1,.default2,.default3{
+				width: 40px;
+			    height: 40px;
+				display: inline-block;;
+				background: #383641;
+				border-radius:20px;
+				margin-left: -26px;
+				position: absolute;
+				left: 102%;
+				top: -23%;
+			}
+			.img1,.img2,.img3{
+				width: 15px;
+				height:15px;
+				display: block;
+				margin-left: 12px;
+				margin-top: 12px;	
+			}
+			.shop{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				margin-top:0px;
+			}
+			.shop li{
+				width:48%;
+				height: auto;
+				overflow: hidden;
+				background: #fff;
+				float: left;
+				margin-right: 10px;
+			    margin-bottom: 4%;
+			    border-radius:20px;
+			    box-shadow:0 5px 8px #b9b9b9;
+			}
+			.shop li:nth-child(even){
+				margin-right:0; float:right;
+			}
+			.shop li h3{
+				text-align: center;
+				font-weight:normal;
+				font-size:16px;
+				color:#323c3f;
+				line-height: 30px;
+				font-size: 20px;
+			}
+			.shop li p{
+				text-align: center;
+				font-size:12px;
+				color:#aaabbc;
+				line-height: 26px;
+				margin-bottom: 10px;
+				font-size: 13px;
+			}
+			.shop li .a{
+				text-decoration: line-through;
+				position:relative;
+				display: inline-block;
+				margin-left: 41%;
+			}
+			.shop li .b{
+				text-align: center;
+				font-size:12px;
+				color:#FF4DA6;
+				line-height: 26px;
+				margin-bottom: 10px;
+				position:absolute;
+				left: 58px;
+				top:0px;
+			}
+			.load{
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background:#72bdd5 url(images/loading.png) no-repeat center center;
+				display: block;
+				margin: 0 auto;
+				margin-top:25px;
+				margin-bottom: 25px;
+			}
+			.button{
+				width: 50%;
+				height: 60px;
+				border-radius:5px;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 30px;
+				font-size: 24px;
+				color:#A9A9A9;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="#" class="list"></a>
+			<h2 class="title">Woman,  Dresses</h2>
+			<a href="#" class="pic"></a>
+			<a href="#" class="car"></a>
+			<p class="text">Casual Dresses</p>
+			<p class="arrow_right"></p>
+		</header>
+		<section class="search">
+			<input type="text" value="Search a item..">
+		</section>
+		<section>
+			<div class="choose1">TOP RATED
+				<span class="default1">
+					<img src="images/default.png" class="img1">
+				</span></div>
+			<div class="choose2">SIZE: M
+				<span class="default2">
+					<img src="images/default.png" class="img2">
+				</span></div>
+			<div class="choose3">SPRING
+				<span class="default3"><img src="images/default.png" class="img3"></span></div>
+		</section>
+		<section class="product">
+			<u1 class="shop">
+				<li>
+	    			<img src="images/product01.png" width="100%">
+	    			<h3>Green Blouse</h3>
+	    			<p>$ 348.00</p>
+	    		</li>
+	    		<li>
+	    			<img src="images/product02.png" width="100%">
+	    			<h3>Salmon Shirt</h3>
+	    			<p>$ 89.99</p>
+	    		</li>
+	    		<li>
+	    			<img src="images/product03.png" width="100%">
+	    			<h3>Red Dress</h3>
+	    			<p>$ 552.00</p>
+	    		</li>
+	    		<li class="c">
+	    			<img src="images/product04.png" width="100%">
+	    			<h3>Black T-shirt & Jeans</h3>
+	    			<p class="a">$375.00<a class="b">$269.99</a> </p>
+	    		</li>
+			</u1>
+		</section>
+		<footer>
+			<span class="load"></span>
+			<div class="button">Loading of 2.345 more items</div>
+		</footer>
+	</body>
+</html>
